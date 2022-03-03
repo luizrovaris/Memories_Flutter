@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_memories/screens/memories_management_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -9,7 +10,11 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('My Memories'),
         actions: [
-          IconButton(onPressed: () => print('Add'), icon: Icon(Icons.add_a_photo))
+          IconButton(
+            onPressed: () =>
+                Navigator.of(context).pushNamed(MemoriesManagementScreen.route),
+            icon: Icon(Icons.add_a_photo),
+          )
         ],
       ),
       body: ListView.separated(

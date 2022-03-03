@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../screens/memories_management_screen.dart';
 import '../screens/home_screen.dart';
 
 void main() {
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: HomeScreen(),
+      routes: {
+        MemoriesManagementScreen.route: (_) => MemoriesManagementScreen(),
+      },
     );
   }
 }
