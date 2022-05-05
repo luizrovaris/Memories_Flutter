@@ -6,12 +6,12 @@ class Memory {
   String? description;
   String? formatedAddress;
 
-  Memory(
+  Memory([
     this.id,
     this.image,
     this.latitude,
     this.longitude,
     this.description,
     this.formatedAddress,
-  );
+  ]);
 }
